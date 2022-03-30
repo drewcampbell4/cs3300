@@ -1,10 +1,10 @@
-require "rails_helper"
+#require "rails_helper"
 
-RSpec.describe "The math below is wrong..." do
-  it "should equal 42 but we said 43" do
-    expect(6 * 7).to eq(43)
-  end
-end
+#RSpec.describe "The math below is wrong..." do
+#  it "should equal 42 but we said 43" do
+#    expect(6 * 7).to eq(43)
+#  end
+#end
 
 require "rails_helper"
 
