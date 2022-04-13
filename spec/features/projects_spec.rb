@@ -1,9 +1,16 @@
 require 'rails_helper'
+require 'factory_bot_rails'
 
 RSpec.feature "Projects", type: :feature do
   context "Create new project" do
     before(:each) do
+      user = FactoryBot.create(:user, email: "123@email.com", password: "temp123")
       visit new_project_path
+      within("form") do
+        fill_in "Email", with: user.email
+        fill_in "Password", with: user.password
+        click_button "Log in"
+      end
       within("form") do
         fill_in "Title", with: "Test title"
       end
