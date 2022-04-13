@@ -66,6 +66,8 @@ group :test do
 end
 
 gem 'mini_racer'
+
+gem 'devise'
   
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
